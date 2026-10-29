@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Number Guessing Tflite"
+rootProject.name = "EcoVision AI"
 include ':app'
+include ':ecovision'

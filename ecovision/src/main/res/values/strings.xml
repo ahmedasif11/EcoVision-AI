@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EcoVision</string>
+    <string name="choose_image">Choose image</string>
+    <string name="selected_image_description">Selected image</string>
+    <string name="status_ready">Choose an image to classify it.</string>
+    <string name="status_classifying">Classifying the image on this device.</string>
+    <string name="status_classified">Classified on this device.</string>
+    <string name="category_line">Category: %1$s</string>
+    <string name="confidence_line">Confidence: %1$s</string>
+    <string name="status_cancelled">No image was selected.</string>
+    <string name="status_unreadable">That file could not be read as an image.</string>
+    <string name="status_model_missing">The waste model could not be loaded.</string>
+    <string name="status_inference_failed">The model could not classify this image.</string>
+</resources>

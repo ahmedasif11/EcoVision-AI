@@ -1,0 +1,42 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.ecovision'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.ecovision"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    // openFd can map an asset only when the APK stores it uncompressed.
+    // assets/model.tflite is the checked WasteNet file.
+    androidResources {
+        noCompress 'tflite'
+    }
+}
+
+dependencies {
+    // Pinned. The original :app module uses org.tensorflow:tensorflow-lite:+, which is not copied here.
+    // 2.17.0 is the version that dependency resolved to during the Phase 1 sample build.
+    implementation 'org.tensorflow:tensorflow-lite:2.17.0'
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Target SDK 35 draws the activity behind the action bar. Opting out keeps the button visible. -->
+    <style name="Theme.EcoVision" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

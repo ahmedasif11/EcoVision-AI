@@ -9,7 +9,13 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
+**/build/
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+
+# Assignment write-ups and reports stay on this machine.
+/docs/reports/
+/docs/ASSIGNMENT_CHECKLIST.md
+/docs/NumberGuessingAppTflite-project.zip
